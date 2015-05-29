@@ -5,12 +5,16 @@
 
   header {
     font-size: 20px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
 ol.top-posters {
   li {
     margin-top: 8px;
+    font-weight: bold;
   }
 }
 
@@ -25,8 +29,13 @@ ol.top-posters {
 
 .poster-username {
   margin-left: 6px;
+  font-weight: normal;
 }
 
 .poster-posts-count {
-
+  margin-left: 6px;
+  padding: 4px 10px;
+  color: #fff;
+  background-color: #658443;
+  font-weight: normal;
 }
