@@ -1,7 +1,14 @@
 .top-posters-container {
+  // hide container before data is loaded to avoid weird-looking empty container
+  display: none;
+
   margin-bottom: 15px;
   background-color: #e4facc;
   padding: 8px 8px 8px 15px;
+
+  &.loaded {
+    display: block;
+  }
 
   header {
     font-size: 20px;
@@ -12,10 +19,15 @@
 }
 
 ol.top-posters {
+  letter-spacing: 1px;
   li {
     margin-top: 8px;
     font-weight: bold;
   }
+}
+
+.top-poster-link {
+  letter-spacing: 0;
 }
 
 .btn-top-posters {
@@ -38,4 +50,5 @@ ol.top-posters {
   color: #fff;
   background-color: #658443;
   font-weight: normal;
+  letter-spacing: 0;
 }

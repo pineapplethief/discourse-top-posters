@@ -1,7 +1,8 @@
 export default Ember.Component.extend({
   classNames: ['top-posters-container'],
+  classNameBindings: ['loaded'],
 
-  posters: null,
+  posters: [],
 
   expanded: true,
 
@@ -10,6 +11,10 @@ export default Ember.Component.extend({
       this.toggleProperty('expanded');
     }
   },
+
+  loaded: function() {
+    return (this.get('posters').length > 0);
+  }.property('posters'),
 
   iconClass: function() {
     if (this.get('expanded')) { return "fa fa-caret-up"; }
@@ -25,6 +30,7 @@ export default Ember.Component.extend({
                   return Discourse.User.create(poster);
                 });
                 self.set('posters', posters);
+                self.set('classNames', ['top-posters-container', 'loaded']);
              });
 
   }.on('init'),
