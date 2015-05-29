@@ -1,4 +1,9 @@
+# encoding: utf-8
+
 en:
   js:
     top_posters:
       header: 'This week top posters'
+      number_of_posts:
+        one: "1 post"
+        many: "{{count}} posts"
