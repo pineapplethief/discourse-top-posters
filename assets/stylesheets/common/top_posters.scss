@@ -1,0 +1,24 @@
+.top-posters-container {
+  margin-bottom: 15px;
+  background-color: #e4facc;
+  padding: 8px 8px 8px 15px;
+
+  header {
+    font-size: 20px;
+  }
+}
+
+ol.top-posters {
+  li {
+    margin-top: 8px;
+  }
+}
+
+.btn-top-posters {
+  background-color: #e4facc;
+  padding: 0 0 4px 7px;
+
+  &:hover, &:active, &:focus {
+    background-color: #e4facc;
+  }
+}

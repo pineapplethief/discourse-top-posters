@@ -1,0 +1,28 @@
+{{#if posters}}
+  <header>
+    This week top posters
+    {{i18n 'top_posters.header'}}
+    {{i18n 'poll.voters.zero'}}
+    <button class='btn btn-top-posters' {{action 'postersToggle' }}>
+      <i {{bind-attr class="iconClass"}}></i>
+    </button>
+  </header>
+
+  {{#if expanded}}
+
+    <ol>
+      {{#each poster in posters}}
+        <li>
+          {{#link-to 'user' poster classNames="top-poster-link"}}
+            {{avatar poster imageSize="small"}}
+            <span class='poster-username'>
+              {{poster.username}}
+            </span>
+          {{/link-to}}
+          {{poster.posts_count}}
+        </li>
+      {{/each}}
+    </ol>
+  {{/if}}
+
+{{/if}}

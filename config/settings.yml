@@ -1,0 +1,6 @@
+plugins:
+  top_posters_enabled:
+    default: true
+  top_posters_users_to_show:
+    default: 10
+    client: 10

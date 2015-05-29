@@ -1,0 +1,6 @@
+# encoding: utf-8
+
+en:
+  site_settings:
+    top_posters_enabled: 'Show sidebar with users ranked by post activity?'
+    top_posters_users_to_show: "Maximum number of users shown in the sidebar."
