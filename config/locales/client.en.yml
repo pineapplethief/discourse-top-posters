@@ -7,3 +7,4 @@ en:
       number_of_posts:
         one: "1 post"
         many: "{{count}} posts"
+        other: "{{count}} posts"
