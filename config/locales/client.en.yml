@@ -3,7 +3,7 @@
 en:
   js:
     top_posters:
-      header: 'This week top posters'
+      header: 'Members of the Week'
       number_of_posts:
         one: "1 post"
         many: "{{count}} posts"
